@@ -1,0 +1,22 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+@import "~nprogress/nprogress.css";
+
+#nprogress .bar{
+    background: #e6332a !important;
+}
+#nprogress .peg{
+    box-shadow: 0 0 10px #e6332a, 0 0 5px #e6332a;
+}
+.navbar-laravel {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
