@@ -1,7 +1,9 @@
 <template>
     <div class="main">
         <agnav/>
+        <transition name="fade" mode="out-in">
         <router-view/>
+        </transition>
     </div>
 </template>
 

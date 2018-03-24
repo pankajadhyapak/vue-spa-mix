@@ -8,8 +8,8 @@ let base = [
         component: require("../pages/Home")
     },
     {
-        path: '/about',
-        component: require("../pages/About")
+        path: '/about/',
+        component: require("../pages/About"),
     },
     {
         path: "*",

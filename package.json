@@ -9,7 +9,10 @@
     "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
     "prod": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
-  "keywords": ["spa", "vue"],
+  "keywords": [
+    "spa",
+    "vue"
+  ],
   "author": "Pankaj Adhyapak",
   "license": "ISC",
   "devDependencies": {
@@ -21,7 +24,6 @@
     "jquery": "^3.2",
     "laravel-mix": "^2.0",
     "lodash": "^4.17.4",
-    "popper.js": "^1.12",
     "vue": "^2.5.7",
     "moment": "^2.21.0",
     "sweetalert": "^2.1.0",
@@ -29,6 +31,7 @@
     "vue-router": "^3.0.1",
     "vue-select": "^2.4.0",
     "nprogress": "^0.2.0",
-    "vue-meta": "^1.4.4"
+    "vue-meta": "^1.4.4",
+    "vue-tippy": "^2.0.8"
   }
 }

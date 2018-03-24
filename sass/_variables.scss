@@ -1,17 +1,22 @@
-// Body
-$body-bg: #f5f8fa;
-
-// Typography
-$font-family-sans-serif: "Raleway", sans-serif;
+$body-bg: #e6ebf1;
+$font-family-base: Open Sans;
 $font-size-base: 0.9rem;
-$line-height-base: 1.6;
-$text-color: #636b6f;
 
-// Navbar
-$navbar-default-bg: #fff;
+$primary: #6772E5;
+/*$success: #3ECF8E;*/
 
-// Buttons
-$btn-default-color: $text-color;
+$card-border-width: 0;
+$card-inner-border-radius: 5px;
+$card-cap-bg: #fff;
+$card-bg: #f6f9fc;
 
-// Panels
-$panel-default-heading-bg: #fff;
+$table-hover-bg: #f5f8fc;
+
+$modal-content-border-width: 0;
+$modal-backdrop-opacity: .7;
+
+$input-box-shadow: 0;
+$input-btn-focus-box-shadow: 0;
+$input-border-radius: 0;
+
+$tooltip-max-width: 500px;

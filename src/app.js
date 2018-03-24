@@ -10,7 +10,8 @@ window.Vue = require('vue');
 import VueRouter from 'vue-router';
 import router from './routes';
 import NProgress from 'nprogress';
-import Meta from 'vue-meta'
+import Meta from 'vue-meta';
+import VueSelect from 'vue-select';
 
 Vue.use(VueRouter);
 Vue.use(Meta);
@@ -31,7 +32,10 @@ router.afterEach(function () {
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+
 Vue.component('example-component', require('./components/Example.vue'));
+Vue.component('vselect', VueSelect);
+
 
 import App from './App.vue';
 import authService from './services/auth';
@@ -41,6 +45,8 @@ Vue.mixin({
         return {
             authCheck: authService.check()
         }
+    },
+    methods:{
     }
 });
 

@@ -1,22 +1,138 @@
-
-// Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
-
 // Variables
 @import "variables";
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
-
 @import "~nprogress/nprogress.css";
+@import "loader";
+@import "common";
+@import "font";
 
+body{
+    font-family: Camphor, Open Sans, Segoe UI, sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+[v-cloak] { display:none; }
+.appbar{
+    margin-bottom: 25px;
+    background: #e7ebf2 !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+
+    .navbar-brand{
+        color: #32325d;
+        font-weight: bolder;
+    }
+}
 #nprogress .bar{
     background: #e6332a !important;
 }
 #nprogress .peg{
     box-shadow: 0 0 10px #e6332a, 0 0 5px #e6332a;
 }
-.navbar-laravel {
+
+.btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+.avatar {
+    text-transform: uppercase !important;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-flex;
+    justify-content: center;
+    font-size: 11px;
+    height: 30px;
+    line-height: 30px;
+    width: 30px;
+    background-color: #5969e2;
+    margin-right: 10px;
+}
+.side-bar-nav .nav-main .nav-link{
+    color: #32325d;
+    font-weight: 600;
+}
+.side-bar-sub-nav{
+    margin-left: 16px;
+    font-weight: 400;
+}
+.side-bar-nav .nav-main .nav-sub .nav-link{
+    color: #32325d;
+    font-weight: 400;
+}
+.user-nav {
+    left: -75px;
+}
+
+.card.table-card {
+
     background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+    .card-header{
+        border-top:none;
+    }
+}
+
+.table-card .card-body{
+    padding: 6px;
+    .table th, .table td {
+        padding: 6px;
+        vertical-align: top;
+        border-top: 1px solid #dee2e6;
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+.table-card thead{
+    background-color: #f6f9fc;
+    text-transform: uppercase;
+}
+.flex.space-between {
+    justify-content: space-between;
+}
+.flex.space-around {
+    justify-content: space-around;
+}
+
+.flex {
+    display: flex;
+}
+
+.btn-filter{
+    padding: 4px 9px 2px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 0 1px rgba(50,50,93,.1), 0 2px 5px 0 rgba(50,50,93,.08), 0 1px 1.5px 0 rgba(0,0,0,.07), 0 1px 2px 0 rgba(0,0,0,.08), 0 0 0 0 transparent;
+    color: #525f7f;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.6;
+    text-align: left;
+    text-decoration: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    word-break: keep-all;
+    transition: box-shadow .08s ease-in,color .08s ease-in;
+}
+
+.btn.btn-filter:hover {
+    background-color: #fff;
+    box-shadow: 0 0 0 1px rgba(50,50,93,.1), 0 2px 5px 0 rgba(50,50,93,.1), 0 3px 9px 0 rgba(50,50,93,.08), 0 1px 1.5px 0 rgba(0,0,0,.08), 0 1px 2px 0 rgba(0,0,0,.08);
+    color: #32325d;
+}
+.filter-search{
+    box-shadow: 0 0 0 1px rgba(49,49,93,.03), 0 2px 5px 0 rgba(49,49,93,.1), 0 1px 2px 0 rgba(0,0,0,.08);
+    background-size: 13px 13px;
+    background: #f6f9fc no-repeat 10px 8px;
+    border-radius: 14px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #525f7f;
+    height: 30px;
+    border: none;
+    width: 100%;
+    position: relative;
+    transition: box-shadow .2s ease-in-out;
 }
